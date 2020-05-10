@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <title>Hello World - Guide to create a low-tech website</title>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Pelican" />
+	<link rel="stylesheet" href="/theme/css/styles.css" />
+
+
+
+
+
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">Hello World</a></h1>
+        </header><!-- /#banner -->
+        <nav id="menu"><ul>
+            <li class="active"><a href="/category/misc.html">misc</a></li>
+        </ul></nav><!-- /#menu -->
+<section id="content" class="body">
+  <header>
+    <h2 class="entry-title">
+      <a href="/guide-to-create-a-low-tech-website.html" rel="bookmark"
+         title="Permalink to Guide to create a low-tech website">Guide to create a low-tech website</a></h2>
+ 
+  </header>
+  <footer class="post-info">
+    <time class="published" datetime="2020-05-10T17:28:00+02:00">
+      So 10 Mai 2020
+    </time>
+    <address class="vcard author">
+      By           <a class="url fn" href="/author/me.html">Me</a>
+    </address>
+    <div class="category">
+        Category: <a href="/category/misc.html">misc</a>
+    </div>
+  </footer><!-- /.post-info -->
+  <div class="entry-content">
+    <p>Let's create this website!</p>
+<h2>The basic website</h2>
+<ol>
+<li>Download the archive and unzip it. You can changes the paths to the folders images and dithers in the 'dither.py' file.</li>
+<li>Install Pelican <code>sudo pip3 install pelican hitherdither</code></li>
+<li>When you're ready you can run <code>sudo sh gen.sh</code> and check your website at https://localhost:8000</li>
+</ol>
+<h2>Write content</h2>
+<ol>
+<li>Create content by creating a MD file with the same model as first.md in the folder content.</li>
+<li>To add an image you can write <code>![]({static}/dithers/yourImage.png)</code> and place your image into the folder 'images'</li>
+</ol>
+<h2>Customize the theme</h2>
+<ol>
+<li>Press F12 then go into Sources &gt; static/css &gt; style.css <img alt="" src="/dithers/screenshot.png"></li>
+<li>You can now edit the CSS file <strong>Do not reload or all your changes will be lost</strong>. Once you're happy of your changes, you can copy and paste the content into the file theme/static/css/style.css</li>
+<li>If you want to add new elements on <em>all</em> pages, you can edit the file 'base.html' of the folder theme/template</li>
+</ol>
+<h2>Publishing</h2>
+<ol>
+<li>You now need to run your server to provide the files. You can use a solar powered server like on http://solar.lowtechmagazine.com</li>
+<li>Add the commands to send a file to the provider at the end of 'gen.sh'</li>
+<li>Run <code>sudo sh gen.sh</code></li>
+</ol>
+  </div><!-- /.entry-content -->
+</section>
+        <!-- footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+        </footer --><!-- /#contentinfo -->
+</body>
+</html>
